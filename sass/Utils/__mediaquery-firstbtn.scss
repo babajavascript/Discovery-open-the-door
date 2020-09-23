@@ -1,0 +1,160 @@
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 8px;
+        .discovery {
+            font-size: 1rem;
+            margin-top: 12px;
+            & a:hover {
+                animation: none;
+                color: rgb(123, 123, 123);
+            }
+        }
+    }
+    .container--h1 {
+        display: flex;
+        justify-content: center;
+
+        .h1bigmenu {
+            font-size: 7rem;
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+    .liste {
+        .a--firstpage {
+            display: inline-block;
+            text-decoration: none;
+            padding: 11px;
+            font-size: 1.3rem;
+            &:hover {
+                color: rgb(123, 123, 123);
+                transform: none;
+            }
+        }
+    }
+    .bloc--img {
+        .image {
+            width: 600px;
+            height: 45vh;
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+    .paraone {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        &:hover {
+            transform: none;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 8px;
+        .discovery {
+            font-size: 1rem;
+            & a:hover {
+                animation: none;
+                color: rgb(123, 123, 123);
+            }
+        }
+    }
+    .container--h1 {
+        display: flex;
+        justify-content: center;
+
+        .h1bigmenu {
+            font-size: 5rem;
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+    .liste {
+        .a--firstpage {
+            display: inline-block;
+            text-decoration: none;
+            padding: 11px;
+            font-size: 1.1rem;
+            &:hover {
+                color: rgb(123, 123, 123);
+                transform: none;
+            }
+        }
+    }
+    .bloc--img {
+        .image {
+            width: 500px;
+            height: 35vh;
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+    .paraone {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        margin-top: 40px;
+        &:hover {
+            transform: none;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .navbar {
+        padding: 8px;
+        text-align: center;
+        .discovery {
+            display: inline-block;
+            position: relative;
+            font-size: 1rem;
+            text-align: center;
+            padding: 5px 0;
+            & a:hover {
+                animation: none;
+                color: rgb(123, 123, 123);
+            }
+        }
+    }
+    .container--h1 {
+        display: flex;
+        justify-content: center;
+        .h1bigmenu {
+            font-size: 3rem;
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+    .liste {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .a--firstpage {
+            padding: 6px;
+            font-size: 0.8rem;
+            &:hover {
+                color: rgb(123, 123, 123);
+                transform: none;
+            }
+        }
+    }
+    .bloc--img {
+        .image {
+            width: 300px;
+            height: 20vh;
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+    .paraone {
+        font-size: 0.8rem;
+        &:hover {
+            transform: none;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.navbar {
+    background: #ffc0cb;
+    padding: 20px;
+    .discovery {
+        position: absolute;
+        font-size: 1.3rem;
+        
+        border: 3px solid white;
+        padding: 15px 0;
+        background: white;
+        border-radius: 4px;
+        user-select: none;
+        margin-top: 12px;
+        & a {
+            text-decoration: none;
+            color: rgb(106, 106, 106);
+            padding: 15px;
+        }
+        & a:hover {
+            animation: home 1s alternate-reverse infinite;
+            color: white;
+        }
+    }
+}
+.container--h1 {
+    display: flex;
+    justify-content: center;
+
+    .h1bigmenu {
+        font-size: 10rem;
+        display: inline-block;
+        user-select: none;
+        margin-top: 10px;
+        color: mix(rgb(62, 62, 62), rgb(84, 83, 83), 85%);
+        text-shadow: -0.0075em 0.0075em 0 mix(#7e7e7e, rgb(106, 106, 106), 94%),
+            0.005em 0.005em 0 mix(#7e7e7e, rgb(106, 106, 106), 60%),
+            0.01em 0.01em 0 mix(#7e7e7e, rgb(106, 106, 106), 62%), 0.015em 0.015em mix(#7e7e7e, rgb(106, 106, 106), 64%),
+            0.02em 0.02em 0 mix(#7e7e7e, rgb(106, 106, 106), 66%),
+            0.025em 0.025em 0 mix(#7e7e7e, rgb(106, 106, 106), 68%),
+            0.03em 0.03em 0 mix(#7e7e7e, rgb(106, 106, 106), 70%),
+            0.035em 0.035em 0 mix(#7e7e7e, rgb(106, 106, 106), 72%);
+        transition: transform 300ms ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+.liste {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+    .a--firstpage {
+        display: inline-block;
+        text-decoration: none;
+        padding: 13px;
+        color: rgb(123, 123, 123);
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        transform: scale(1);
+        transition: transform 300ms;
+        &:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+    }
+}

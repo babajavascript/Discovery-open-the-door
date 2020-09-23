@@ -1,0 +1,65 @@
+.container--scdbtn {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url(images/pex.jpg);
+    background-size: 100%;
+}
+.panel--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.panel__contain {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    transition: all 2s ease-out;
+    z-index: 2;
+
+
+    &--left {
+        border-right: 1px dotted white;
+        width: 50%;
+        height: 100vh;
+        transform: translateX(0);
+        background-color: $secondary-color;
+        z-index: 1000;
+    }
+    &--right {
+        border-left: 1px dotted white;
+        width: 50%;
+        height: 100vh;
+        transform: translateX(0);
+        background-color: $secondary-color;
+        z-index: 1000;
+    }
+}
+input[type="checkbox"] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    opacity: 0;
+    margin: auto;
+
+    &:checked {
+        & ~ div.panel__contain--left {
+            transform: translateX(-100%);
+            background-color: rgb(179, 116, 0);
+        }
+        & ~ div.panel__contain--right {
+            transform: translateX(100%);
+            background-color: rgb(179, 116, 0);
+        }
+    }
+}
+
+
+
